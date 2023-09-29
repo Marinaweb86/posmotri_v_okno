@@ -46,7 +46,6 @@ ol {
   column-gap: 30px;
   margin: auto;
   width: 1140px;
-  height: 534px;
 }
 
 .result {
@@ -94,7 +93,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:hover.search-form__label-text {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -105,11 +104,11 @@ ol {
 
 .search-form__label-text {
   color: #ffffff;
-  font-family: Fira Sans Condensed, Arial, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-family: Fira Sans Condensed, Arial, sans-serif; 
+  font-size: 18px; 
+  font-style: normal; 
+  font-weight: 400; 
+  line-height: normal; 
 }
 
 .visually-hidden {
@@ -123,17 +122,19 @@ ol {
 }
 
 .search-form__textfield {
-  display: flex;
   width: 225px;
   height: 27px;
-  align-items: center;
-  gap: 10px;
-  color: rgba(255, 255, 255, 0.7);
+  font-family: Fira Sans Condensed, Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: currentColor;
   background: transparent;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid currentColor;
   border-right: 0;
   border-left: 0;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid currentColor;
   appearance: none;
 }
 
@@ -161,6 +162,8 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
+  position: relative;
+  display: flex;
   width: 19px;
   height: 19px;
   border: 1px solid #ffffff;
@@ -168,15 +171,15 @@ ol {
 
 .search-form__pseudo-checkbox:before {
   content: "";
+  display: none;
   width: 15px;
   height: 15px;
-  margin: 1px 0 0 1px;
+  margin: auto;
   background-color: #ffffff;
 }
 
 .button {
   color: #ffffff;
-  text-align: center;
   font-family: Fira Sans Condensed, Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -184,7 +187,7 @@ ol {
   line-height: normal;
   text-align: center;
   background: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid currentColor;
   cursor: pointer;
 }
 
@@ -206,7 +209,6 @@ button:focus-visible {
 }
 
 .search-form__submit-button {
-  display: flex;
   width: 194px;
   height: 34px;
   justify-content: center;
@@ -224,7 +226,6 @@ button:focus-visible {
 }
 
 .title {
-  margin-top: 26px;
   margin-bottom: 26px;
   color: #ffffff;
   font-family: Oswald, Arial, sans-serif;
@@ -309,7 +310,7 @@ button:focus-visible {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16.2px;
+  line-height: 90%;
 }
 
 .content__video-card-thumbnail {
@@ -322,4 +323,5 @@ button:focus-visible {
 
 .more-button {
   width: 100%;
+  height: 100%;
 }
