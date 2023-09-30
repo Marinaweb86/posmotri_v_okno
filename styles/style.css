@@ -55,6 +55,7 @@ ol {
 .result__video-container {
   position: relative;
   width: 711px;
+  height: 386px;
   margin-bottom: 16px;
 }
 
@@ -67,7 +68,7 @@ ol {
 
 .search-form {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 
@@ -212,7 +213,7 @@ button:focus-visible {
   width: 194px;
   height: 34px;
   justify-content: center;
-  align-items: center;
+  align-self: end;
   gap: 10px;
   flex-shrink: 0;
 }
@@ -323,5 +324,5 @@ button:focus-visible {
 
 .more-button {
   width: 100%;
-  height: 100%;
+  height: 34px;
 }
